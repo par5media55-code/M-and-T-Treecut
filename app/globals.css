@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-am-green-dark: #1B3022;
+  --color-am-green-base: #1A241C;
+  --color-am-charcoal: #0A0D0B;
+  --color-am-charcoal-light: #0F1410;
+  --color-am-wood: #8E928E;
+  --color-am-wood-light: #A0A5A0;
+  --color-am-gold: #C5A059;
+  --color-am-gold-light: #E3C382;
+  --color-am-text: #F5F5F0;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-am-charcoal text-am-text antialiased;
+}

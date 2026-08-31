@@ -1,0 +1,6 @@
+{
+  "name": "M&T Treecut",
+  "description": "Reliable and affordable tree felling services across North West Province, South Africa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
