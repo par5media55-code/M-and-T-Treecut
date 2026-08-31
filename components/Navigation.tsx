@@ -40,7 +40,7 @@ export default function Navigation() {
           <div className="w-10 h-10 bg-am-gold flex items-center justify-center rounded-sm rotate-45 transition-transform group-hover:rotate-90">
             <div className="-rotate-45 font-bold text-am-charcoal text-xl underline-offset-4 decoration-2">M&T</div>
           </div>
-          <span className="text-xl font-bold tracking-tighter uppercase text-white">M&T Treecut</span>
+          <span className="text-xl font-bold tracking-tighter uppercase text-am-text">M&T Treecut</span>
         </Link>
 
         {/* Desktop Menu */}

@@ -4,13 +4,13 @@
 @theme {
   --color-am-green-dark: #1B3022;
   --color-am-green-base: #1A241C;
-  --color-am-charcoal: #0A0D0B;
-  --color-am-charcoal-light: #0F1410;
-  --color-am-wood: #8E928E;
-  --color-am-wood-light: #A0A5A0;
-  --color-am-gold: #C5A059;
-  --color-am-gold-light: #E3C382;
-  --color-am-text: #F5F5F0;
+  --color-am-charcoal: #F7F6F2;        /* page background (light) */
+  --color-am-charcoal-light: #FFFFFF;  /* panels / cards (light) */
+  --color-am-wood: #4A4E4A;            /* muted body text (dark enough on white) */
+  --color-am-wood-light: #6A6E6A;
+  --color-am-gold: #A87B2C;            /* darkened bronze for contrast on white */
+  --color-am-gold-light: #C39A4A;
+  --color-am-text: #1A1D1A;            /* primary text (near-black) */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
 }
@@ -21,4 +21,22 @@ html {
 
 body {
   @apply bg-am-charcoal text-am-text antialiased;
+}
+
+/* Light-theme remap: headings hardcoded as text-white now render dark */
+.text-white {
+  color: var(--color-am-text) !important;
+}
+
+/* Except in the hero, where white text is readable over the photo */
+#home .text-white {
+  color: #ffffff !important;
+}
+
+/* Form inputs: keep a subtle panel + dark text on the light bg */
+input,
+select,
+textarea {
+  color: var(--color-am-text);
+  background-color: var(--color-am-charcoal-light);
 }
